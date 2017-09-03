@@ -1,9 +1,3 @@
----
-output: 
-  html_document: 
-    fig_caption: yes
-    keep_md: yes
----
 # Reproducable Research Project1
 JP Van Steerteghem  
 9/2/2017  
@@ -63,6 +57,14 @@ library(dplyr)
 
 ```r
 unzip(zipfile="./activity.zip",exdir="./data")
+```
+
+```
+## Warning in unzip(zipfile = "./activity.zip", exdir = "./data"): error 1 in
+## extracting from zip file
+```
+
+```r
 activity<- read.csv("./data/activity.csv")  
 head(activity)
 ```

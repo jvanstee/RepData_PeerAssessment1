@@ -149,8 +149,10 @@ library(dplyr)</code></pre>
 <pre><code>## The following objects are masked from 'package:base':
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>unzip(zipfile=&quot;./activity.zip&quot;,exdir=&quot;./data&quot;)
-activity&lt;- read.csv(&quot;./data/activity.csv&quot;)  
+<pre class="r"><code>unzip(zipfile=&quot;./activity.zip&quot;,exdir=&quot;./data&quot;)</code></pre>
+<pre><code>## Warning in unzip(zipfile = &quot;./activity.zip&quot;, exdir = &quot;./data&quot;): error 1 in
+## extracting from zip file</code></pre>
+<pre class="r"><code>activity&lt;- read.csv(&quot;./data/activity.csv&quot;)  
 head(activity)</code></pre>
 <pre><code>##   steps       date interval
 ## 1    NA 2012-10-01        0
